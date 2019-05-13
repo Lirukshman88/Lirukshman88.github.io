@@ -65,6 +65,11 @@ h5{
 		padding-right: 50px;
 	}
 
+	.box-container{
+		  width: 100%;
+  		padding-top: 100%; /* 1:1 Aspect Ratio */
+	}
+
 	.container-fluid1{
 		padding-top: 5px;
 		padding-bottom:57px;
@@ -77,6 +82,9 @@ h5{
 	height: 70px; /*same height as header*/
 	margin-top: -70px; 
 	visibility: hidden;
+	}
+	.aspect{
+		padding-top: 56.25%;
 	}
 	.navbar{
 		padding-top: 10px;
@@ -95,10 +103,12 @@ h5{
 			padding: 0 0 0 0;
 			border: none;
 			border-radius: 0;
+			width: 100%;
+			height: auto;
 	}
 	.thumbnail img {
 			width: 100%;
-			height: 185px;
+			height: auto;
 			margin-bottom: 10px;
 	}
 
@@ -264,7 +274,7 @@ overflow-x: hidden;
 
 		<div class="col-sm-6">
 		<h2><strong><u><center>Light Following</center></u></strong></h2>
-		<div class="thumbnail">
+		<div class="thumbnail box-container">
 		<img src="Light2.jpg" alt="Light2" class="rotateimg180" >
 		<h4><font color="black"><strong>Description:</strong></font></h4>
 		<p><strong><font color="black">This is my light following robot using an Arduino Uno and and three photoresistors. The robot's intent is to follow the light that has been shun near the front.</font></strong></p>
