@@ -1,270 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Personal Website</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<style>
-		.home-background { 
-				background-image: url("Images/Vancouver4.jpg");
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-		}
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
 
-		.arduino-background { 
-				background-color: #006E6D; /* Arduino Color */
-				color: #ffffff;
-				background-size: 100% 50%;
-		}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
 
-		.android-background { 
-				background-color: #006E51; /* Android Color */
-				color: #555555;
-				background-size: 100% 100%;
-		}
-
-		.javascript-background { 
-				background-color: #2E4A62; /* Javascript Color */
-				color: #555555;
-				background-size: 100% 100%;
-		}
-
-		.card-background{
-			background-color:#B0B0B0;
-		}
-
-		.contact-background{
-			background-color:#2f2f2f;
-			color:#ffffff;
-			background-size: 100% 100%;
-		}
-
-		.navbar-nav > li > .dropdown-menu { background-color: #D3D3D3; 
-		}
-
-		.container-fluid {
-			padding-top: 20px;
-			padding-bottom: 80px;
-			padding-left: 50px;
-			padding-right: 50px;
-		}
-
-		.container-carder {
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-
-		.container-contact {
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-
-		.anchor{
-			display: block;
-			height: 50px; /*same height as header*/
-			margin-top: -70px; 
-			visibility: hidden;
-		}
-
-		.img-circle{
-			border-radius: 50%;
-		}
-
-		.rotateimg180 {
-			-webkit-transform:rotate(180deg);
-			-moz-transform: rotate(180deg);
-			-ms-transform: rotate(180deg);
-			-o-transform: rotate(180deg);
-			transform: rotate(180deg);
-		} 
-
-		body{
-			padding-top: 70px;
-			max-width: 100%;
-			overflow-x: hidden;
-		}
-	</style>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-spy="scroll">
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="#">Personal Website</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+		<a class="navbar-brand" href="#">Personal Website</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Projects
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#Arduino">Arduino</a>
-	          <a class="dropdown-item" href="#Android">Android</a>
-	          <a class="dropdown-item" href="#Javascript">Javascript</a>
-	        </div>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#Contact">Contact</a>
-	      </li>
-	    </ul>
-	  </div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Education">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Work">Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Skills">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Contact">Contact</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 
 	<span id="Home" class="anchor"></span>
-	<div class="home-background text-center container-fluid">
-		<br>
-		<h2><font color= #f7f9f9 >I'm a third year computer science student at the University of British Columbia and these are my personal projects</font></h2>
-		<br>
-		<br>
-		<h1><strong><font color= #B0B0B0>Lirukshman Sundaralingam</font></strong></h1>
-		<br>
-		<br>
-		<h2><font color="#f7f9f9">Projects are below</font></h2>
-		<h3><font color="#f7f9f9" size="20">&#9660;</font></h3>
-	</div>
-
-	<span id="Arduino" class="anchor"></span>
-	<div class="arduino-background container-fluid"> 
-	<h1><strong><u><center>Arduino</center></u></strong></h1>
-	<div class="row">
-		<div class="col-sm-6 container-carder">
-			<h2><strong><u><center>Obstacle Avoidance</center></u></strong></h2>
-			<div class = "card card-background">
-				<img class = "card-img-top" src="Images/Obstacle3.jpg" alt="Obstacle">
-				<div class = "card-body">
-					<h4><font color="black"><strong>Description:</strong></font></h4>
-					<p><strong><font color="black">This is my Obstacle avoidance robot using an Arduino Uno and three ultrasonic sensors. The robots' intent is to turn left or right to avoid any obstacles that may come in its path.</font></strong></p>
-					<h4><font color="black"><strong>Equipment:</strong></font></h4>
-					<ul>
-						<strong><font color="black"><li>Aruino Uno</li></font></strong>
-						<strong><font color="black"><li>3 Ultrasonic Sensors</li></font></strong>
-						<strong><font color="black"><li>Chassis kit (2 DC motors, 2 wheels and a front end wheel)</li></font></strong>
-						<strong><font color="black"><li>H-Bridge L293D IC</li></font></strong>
-						<strong><font color="black"><li>Breadboard</li></font></strong>
-					</ul>
-					<h4><font color="black"><strong>Schematic:</strong></font></h4>
-					<ul>
-						<strong><font color="black"><li><a href="https://www.theengineeringprojects.com/2015/02/interfacing-multiple-ultrasonic-sensor-arduino.html" target="_blank" target="_blank"> 3 Ultrasonic Sensors</a></li></font></strong>
-					</ul>  
-					<h4><font color="black"><strong><a  href="https://github.com/Lirukshman88/ObstacleAvoidance" target="_blank">Code</a></strong></font></h4>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-sm-6 container-carder">
-			<h2><strong><u><center>Light Following</center></u></strong></h2>
-			<div class= "card card-background">
-				<img class = "card-img-top rotateimg180" src="Images/Light2.jpg" alt="Light2">
-				<div class = "card-body">
-					<h4><font color="black"><strong>Description:</strong></font></h4>
-					<p><strong><font color="black">This is my light following robot using an Arduino Uno and and three photoresistors. The robots' intent is to follow the light that has been shun near the front.</font></strong></p>
-					<h4><font color="black"><strong>Equipment:</strong></font></h4>
-					<ul>
-						<strong><font color="black"><li>Aruino Uno</li></font></strong>
-						<strong><font color="black"><li>3 Photoresistors</li></font></strong>
-						<strong><font color="black"><li>Chassis kit (2 DC motors, 2 wheels and a front end wheel)</li></font></strong>
-						<strong><font color="black"><li>H-Bridge L293D IC</li></font></strong>
-						<strong><font color="black"><li>Breadboard</li></font></strong>
-					</ul>
-					<h4><font color="black"><strong>Schematic:</strong></font></h4>
-					<ul>
-						<strong><font color="black"><li><a href="https://create.arduino.cc/projecthub/masteruan/arduino-cayenne-light-quality-monitoring-fd08f7" target="_blank"> 3 Photoresistors</a></li></font></strong>
-					</ul>  
-					<h4><font color="black"><strong><a  href="https://github.com/Lirukshman88/LightFollowing" target="_blank">Code</a></strong></font></h4>
-				</div>
-			</div>   
-	 	</div>
-	</div>
-	</div>
-
-
-	<span id="Android" class="anchor"></span>
-	<div class="android-background container-fluid"> 
-		<h1><strong><font color="white"><center><u>Android</u></center></font></strong></h1>
-	 	<div class="row">
-			<div class="col-sm-4 container-carder">
-				<h2><strong><font color="white"><center><u>TaskOrganizer</u></center></font></strong></h2>
-				<div class = "card card-background">
-					<img class = "card-img-top" src="Images/TaskOrganizerImage.png" alt="TaskOrganizer">
-					<div class = "card-body">
-						<h4><font color="black"><strong>Description:</strong></font></h4>
-						<p><strong><font color="black">This is an app developed by a group of computer science students who wanted to help users organize their tasks in a efficient manner. We accomplish this by accounting for the time left and duration of the task as well as the priority based on a 5 point scale selected by the user.</font></strong></p>
-						<h4><font color="black"><strong><a  href="https://github.com/Lirukshman88/TaskOrganizer" target="_blank">Code</a></strong></font></h4>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 container-carder">
-				<h2><strong><font color="white"><center><u>InnovateBc</u></center></font></strong></h2>
-				<div class = "card card-background">
-					<img class = "card-img-top" src="Images/InnovateBcImage3.png" alt="InnovateBcImage3" >
-					<div class = "card-body">
-						<h4><font color="black"><strong>Description:</strong></font></h4>
-						<p><strong><font color="black">This was a group project for the K-12 Innovation Partnership. Our intent was to make an app to showcase teacher's projects around B.C. by either flipping, scrolling through a list or searching.</font></strong></p>
-						<h4><font color="black"><strong><a  href="https://github.com/Lirukshman88/InnovateBc" target="_blank">Code</a></strong></font></h4>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-4 container-carder">
-				<h2><strong><font color="white"><center><u>Hangman</u></center></font></strong></h2>
-				<div class = "card card-background">
-					<img class = "card-img-top" src="Images/HangmanImage.png" alt="HangmanImage">
-					<div class = "card-body">
-						<h4><font color="black"><strong>Description:</strong></font></h4>
-						<p><strong><font color="black">This was a summer project where you can ditch the pen and paper and use your phone to play hangman. You, your opponent or a random generator enters a hidden word where one of you will have to guess with 6 strikes. </font></strong></p>
-			 			<h4><font color="black"><strong><a  href="https://github.com/Lirukshman88/Hangman" target="_blank">Code</a></strong></font></h4>
-					</div>
-				</div>
-		 	</div>
+	<div class="home-background containerPadder">
+		<div class="home-page">
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1><strong>
+					<font style="font-size: 5vw;" color=#f7f9f9>Lirukshman Sundaralingam</font>
+				</strong></h1>
+			<h2>
+				<font style="font-size: 3vw;" color=#f7f9f9> Third year Computer Science student at the University
+					of British Columbia</font>
+			</h2>
+			<br>
+			<h2>
+				<font style="font-size: 3vw;" color="#f7f9f9">Check out below</font>
+			</h2>
+			<h3>
+				<font style="font-size: 3vw;" color="#f7f9f9">&#9660;</font>
+			</h3>
 		</div>
 	</div>
 
-
-	<span id="Javascript" class="anchor"> </span>
-	<div  class="javascript-background container-fluid"> 
-		<h1><strong><font color="white"><center><u>Javascript</u></center></font></strong></h1>
+	<span id="Education" class="anchor"></span>
+	<div class="education-background containerPadder">
+		<h3 class="display-3">
+			<center><u>
+					<font color="white">Education</font>
+				</u></center>
+		</h3>
+		<br>
 		<div class="row">
 			<div class="col-sm-3"> </div>
-			<div class="col-sm-6 container-carder">
-				<h2><strong><font color="white"><center><u>NBA Fantasy Predictor</u></center></font></strong></h2>
-					<div class="card card-background">
-						<img class = "card-img-top" src="Images/NBAFantasy.png" alt="NBAFantasy">
-						<div class = "card-body">
-							<h4><font color="black"><strong>Description:</strong></font></h4>
-							<p><strong><font color="black">This is a modern web app that will help you choose NBA fantasy players for your roster. By using tools like React, Node and Tensorflow, it can predict the next season statistics for 25 NBA players. If you look at the README, I have included the results of a sample run with the average and standard deviation of Games Played, Points per game, Assists per game and Rebounds per game. </font></strong></p>
-							<h4><font color="black"><strong><a  href="https://github.com/Lirukshman88/NBAFantasyPredictor" target="_blank">Code</a></strong></font></h4>
-						</div>
-					</div>
+			<div class="card col-sm-6">
+				<img class="card-img-top" src="Images/UBC.png" alt="UBC">
+				<div class="card-body">
+					<h5 class="card-title">University of British Columbia</h5>
+					<h6 class="card-subtitle mb-2 text-muted">Bachelor of Science - Computer Science</h6>
+					<h7>
+						<font color="black"><strong>Relevant Coursework</strong></font>
+					</h7>
+					<ul>
+						<font color="black">
+							<li>CPSC 320 - Intermediate Algorithm Design and Analysis</li>
+						</font>
+						<font color="black">
+							<li>CPSC 313 - Computer Hardware and Operating Systems</li>
+						</font>
+						<font color="black">
+							<li>CPSC 322 - Introduction to Artificial Intelligence</li>
+						</font>
+						<font color="black">
+							<li>CPSC 304 - Introduction to Relational Databases</li>
+						</font>
+					</ul>
+				</div>
 			</div>
-			<div class="col-sm-3"></div>
+			<div class="col-sm-3"> </div>
 		</div>
+	</div>
+
+	<span id="Work" class="anchor"></span>
+	<div class="work-background containerPadder">
+		<h1 class="display-3">
+			<center><u>
+					<font color="white">Work Experience</font>
+				</u></center>
+		</h1>
+		<br>
+		<div class="row">
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/ece.jpg" alt="ece">
+					<div class="card-body">
+						<h5 class="card-title">UBC Electrical and Computer Engineering Department</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Software Developer Intern in Research</h6>
+						<h7>May 2020 - Present</h7>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/intel.png" alt="UBC">
+					<div class="card-body">
+						<h5 class="card-title">Intel Corporation</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Firmware Engineer Intern</h6>
+						<h7>September 2019 - May 2020</h7>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/cs.png" alt="cs">
+					<div class="card-body">
+						<h5 class="card-title">UBC Computer Science Department</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Undergraduate Teaching Assistant</h6>
+						<h7>July 2019- August 2019</h7>
+						<br>
+						<h7>January 2019 - April 2019</h7>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<span id="Projects" class="anchor"></span>
+	<div class="project-background containerPadder">
+		<h1 class="display-3">
+			<center><u>
+					<font color="white">Personal Projects</font>
+				</u></center>
+		</h1>
+		<div class="row">
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/Obstacle3.jpg" alt="Obstacle">
+					<div class="card-body">
+						<font color="black">
+							<h4 class="card-title">
+								Obstacle Avoidance Robot
+							</h4>
+							<p>
+								Obstacle avoidance robot using an Arduino Uno and three ultrasonic
+								sensors. The robots' intent is to turn left or right to avoid any obstacles that may
+								come in its path.
+							</p>
+							<h5>
+								Equipment:
+							</h5>
+							<ul>
+								<li>Aruino Uno</li>
+								<li>3 Ultrasonic Sensors</li>
+								<li>Chassis kit (2 DC motors, 2 wheels and a front end wheel)</li>
+								<li>H-Bridge L293D IC</li>
+								<li>Breadboard</li>
+							</ul>
+							<h5>
+								Schematic:
+							</h5>
+							<ul>
+								<li><a href="https://www.theengineeringprojects.com/2015/02/interfacing-multiple-ultrasonic-sensor-arduino.html"
+										target="_blank" target="_blank"> 3 Ultrasonic Sensors</a></li>
+							</ul>
+						</font>
+					</div>
+					<ul class="list-group list-group-flush">
+						<center>
+							<li class="list-group-item">
+								<i style="font-size: 3rem" class="devicon-c-plain colored"></i>
+								&nbsp;
+								<img height="52" width="70" src="Images/Arduino.png" style="vertical-align:top"
+									alt="nedblogo">
+							</li>
+						</center>
+					</ul>
+					<a href="https://github.com/Lirukshman88/ObstacleAvoidance"
+						style="color: #ffffff; text-decoration: none;" target="_blank">
+						<div class="card-footer">
+							<center>
+								<i style="font-size: 3rem" class="devicon-github-plain colored"></i>
+							</center>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/NBAFantasy.png" alt="NBAFantasy">
+					<div class="card-body">
+						<font color="black">
+							<h4 class="card-title">
+								NBA Fantasy Predictor Web App
+							</h4>
+							<p>This is a modern web app that will help you choose NBA fantasy
+								players for your roster. By using tools like React, Node and Tensorflow, it can
+								predict the next season statistics for 25 NBA players. If you look at the README, I
+								have included the results of a sample run with the average and standard deviation of
+								Games Played, Points per game, Assists per game and Rebounds per game.</p>
+
+						</font>
+					</div>
+					<ul class="list-group list-group-flush">
+						<center>
+							<li class="list-group-item">
+								<i style="font-size: 3rem" class="devicon-react-original-wordmark colored"></i>
+								&nbsp;
+								<i style="font-size: 4rem" class="devicon-nodejs-plain-wordmark colored"></i>
+								&nbsp;
+								<img height="70" width="110" src="Images/Tensorflow.png" style="vertical-align:top"
+									alt="nedblogo">
+								&nbsp;
+								<img height="50" width="90" src="Images/NeDB.png" style="vertical-align:top"
+									alt="nedblogo">
+
+							</li>
+						</center>
+					</ul>
+					<a href="https://github.com/Lirukshman88/NBAFantasyPredictor"
+						style="color: #ffffff; text-decoration: none;" target="_blank">
+						<div class="card-footer">
+							<center>
+								<i style="font-size: 3rem" class="devicon-github-plain colored"></i>
+							</center>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top rotateimg180" src="Images/Light2.jpg" alt="Light2">
+					<div class="card-body">
+						<font color="black">
+							<h4 class="card-title">
+								Light Following Robot
+							</h4>
+							<p>
+								This is my light following robot using an Arduino Uno and and three
+								photoresistors. The robots' intent is to follow the light that has been shun near
+								the front.
+							</p>
+							<h5>
+								Equipment:
+							</h5>
+							<ul>
+								<li>Aruino Uno</li>
+								<li>3 Photoresistors</li>
+								<li>Chassis kit (2 DC motors, 2 wheels and a front end wheel)</li>
+								<li>H-Bridge L293D IC</li>
+								<li>Breadboard</li>
+							</ul>
+							<h5>
+								Schematic:</strong>
+							</h5>
+							<ul>
+								<li><a href="https://create.arduino.cc/projecthub/masteruan/arduino-cayenne-light-quality-monitoring-fd08f7"
+										target="_blank"> 3 Photoresistors</a></li>
+							</ul>
+						</font>
+					</div>
+					<ul class="list-group list-group-flush">
+						<center>
+							<li class="list-group-item">
+								<i style="font-size: 3rem" class="devicon-c-plain colored"></i>
+								&nbsp;
+								<img height="52" width="70" src="Images/Arduino.png" style="vertical-align:top"
+									alt="nedblogo">
+							</li>
+						</center>
+					</ul>
+					<a href="https://github.com/Lirukshman88/LightFollowing"
+						style="color: #ffffff; text-decoration: none;" target="_blank">
+						<div class="card-footer">
+							<center>
+								<i style="font-size: 3rem" class="devicon-github-plain colored"></i>
+							</center>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/InnovateBcImage3.png" alt="InnovateBcImage3">
+					<div class="card-body">
+						<font color="black">
+							<h4 class="card-title">
+								InnovateBc App
+							</h4>
+							<p>This was a group project for the K-12 Innovation Partnership. Our
+								intent was to make an app to showcase teacher's projects around B.C. by either
+								flipping, scrolling through a list or searching.
+							</p>
+						</font>
+					</div>
+					<ul class="list-group list-group-flush">
+						<center>
+							<li class="list-group-item">
+								<i style="font-size: 3rem" class="devicon-java-plain-wordmark colored"></i>
+								&nbsp;
+								<i style="font-size: 3rem" class="devicon-android-plain colored"></i>
+							</li>
+						</center>
+					</ul>
+					<a href="https://github.com/Lirukshman88/InnovateBc" style="color: #ffffff; text-decoration: none;"
+						target="_blank">
+						<div class="card-footer">
+							<center>
+								<i style="font-size: 3rem" class="devicon-github-plain colored"></i>
+							</center>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/TaskOrganizerImage.png" alt="TaskOrganizer">
+					<div class="card-body">
+						<font color="black">
+							<h4 class="card-title">
+								Task Organizer App</h4>
+							<p>This is an app developed by a group of computer science students who
+								wanted to help users organize their tasks in a efficient manner. We accomplish this
+								by accounting for the time left and duration of the task as well as the priority
+								based on a 5 point scale selected by the user.</p>
+						</font>
+					</div>
+					<ul class="list-group list-group-flush">
+						<center>
+							<li class="list-group-item">
+								<i style="font-size: 3rem" class="devicon-java-plain-wordmark colored"></i>
+								&nbsp;
+								<i style="font-size: 3rem" class="devicon-android-plain colored"></i>
+							</li>
+						</center>
+					</ul>
+					<a href="https://github.com/Lirukshman88/TaskOrganizer"
+						style="color: #ffffff; text-decoration: none;" target="_blank">
+						<div class="card-footer">
+							<center>
+								<i style="font-size: 3rem" class="devicon-github-plain colored"></i>
+							</center>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/HangmanImage.png" alt="HangmanImage">
+					<div class="card-body">
+						<font color="black">
+							<h4 class="card-title">
+								Hangman App
+							</h4>
+							<p>This was a summer project where you can ditch the pen and paper and
+								use your phone to play hangman. You, your opponent or a random generator enters a
+								hidden word where one of you will have to guess with 6 strikes.
+							</p>
+						</font>>
+					</div>
+					<ul class="list-group list-group-flush">
+						<center>
+							<li class="list-group-item">
+								<i style="font-size: 3rem" class="devicon-java-plain-wordmark colored"></i>
+								&nbsp;
+								<i style="font-size: 3rem" class="devicon-android-plain colored"></i>
+							</li>
+						</center>
+					</ul>
+					<a href="https://github.com/Lirukshman88/Hangman" style="color: #ffffff; text-decoration: none;"
+						target="_blank">
+						<div class="card-footer">
+							<center>
+								<i style="font-size: 3rem" class="devicon-github-plain colored"></i>
+							</center>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<span id="Skills" class="anchor"></span>
+	<div class="skills-background containerPadder">
+		<h1 class="display-3">
+			<center><u>
+					<font color="white">Technical Skills</font>
+				</u></center>
+		</h1>
+		<center>
+			<br>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-java-plain-wordmark colored"></i></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-c-plain colored"></i></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-cplusplus-plain colored"></i></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-javascript-plain colored"></i> <br>JavaScript</button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-python-plain-wordmark colored"></i></button>
+			</div>
+			<br>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-git-plain-wordmark colored"></i></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-linux-plain colored"></i><br>Linux</button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-docker-plain-wordmark colored"></i></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-android-plain colored"></i><br>Android SDK</button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><img height="50" width="70" src="Images/sql.jpg"
+						style="vertical-align:top" alt="SQL"></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><img height="70" width="70" src="Images/nosql.png"
+						style="vertical-align:top" alt="noSQL"></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+						class="devicon-react-original-wordmark colored"></i> </button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 4rem"
+						class="devicon-nodejs-plain-wordmark colored"></i></button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><img height="70" width="100" src="Images/Tensorflow.png"
+						style="vertical-align:top" alt="Tensorflow"></button>
+			</div>
+		</center>
 	</div>
 
 	<span id="Contact" class="anchor"> </span>
-	<footer class ="contact-background container-contact text-center">
-		<h2><strong>Contact</strong></h2>
-		<a href="https://github.com/Lirukshman88" target="_blank">
-		<img height="52" width="52" class="img-responsive img-circle" style="display:inline" src="Images/GitHub.png" alt="githublogo">
+	<footer class="contact-background container-contact text-center">
+		<h1 class="display-4">
+			<center><u>
+					<font color="white">Contact</font>
+				</u></center>
+		</h1>
+		<a href="https://github.com/Lirukshman88" style="color: #ffffff; text-decoration: none;" target="_blank">
+			<i style="font-size: 4rem" class="devicon-github-plain"></i>
 		</a>
 		&nbsp;
-		<a href="https://ca.linkedin.com/in/lirukshman-sundaralingam-996028147" target="_blank">
-		<img height="52" width="52" class="img-responsive img-circle" style="display:inline" src="Images/linkedin.png" alt="linkedinlogo">
+		&nbsp;
+		<a href="https://ca.linkedin.com/in/lirukshman-sundaralingam-996028147"
+			style="color: #ffffff; text-decoration: none;" target="_blank">
+			<i style="font-size: 4rem" class="devicon-linkedin-plain colored"></i>
 		</a>
 	</footer>
 </body>
+
 </html>
