@@ -29,37 +29,32 @@ body{
     height: 100%;
     padding: 5%;
     padding-bottom: 10%;
-    border-bottom:2px solid #1a1a1a;
 }
 
 .education-background { 
-    background: linear-gradient(to bottom, #202020 20%, #303030 100%);
+    background: hsla(231, 15%, 16%, 1);
     background-size: 100% 100%;
-    border-bottom:2px solid #1a1a1a;
 }
 
 .work-background { 
-    background: linear-gradient(to bottom, #404040 20%, #505050 100%);
+    background: rgb(40, 42, 54);
     background-size: 100% 100%;
-    border-bottom:2px solid #1a1a1a;
 }
 
 .project-background { 
     color:#ffffff;
-    background: linear-gradient(to bottom, #202020 20%, #303030 100%);
+    background: hsla(231, 15%, 16%, 1);
     background-size: 100% 100%;
-    border-bottom:2px solid #1a1a1a;
 }
 
 .skills-background { 
     color:#ffffff;
-    background: linear-gradient(to bottom, #404040 20%, #505050 100%);
+    background: rgb(40, 42, 54);
     background-size: 100% 100%;
-    border-bottom:2px solid #1a1a1a;
 }
 
 .contact-background{
-    background-color:#2f2f2f;
+    background-color:  hsla(231, 15%, 16%, 1);
     color:#ffffff;
     background-size: 100% 100%;
 }

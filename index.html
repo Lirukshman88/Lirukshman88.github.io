@@ -4,7 +4,7 @@
 <head>
 	<title>Personal Website</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=420, initial-scale=1.0">
+	<meta name="viewport" content="width=1000">
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -12,6 +12,10 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -86,7 +90,7 @@
 	<div class="education-background containerPadder">
 		<h3 class="display-3">
 			<center><u>
-					<font color="white">Education</font>
+					<font style="font-family: 'Noto Sans JP', sans-serif;" color="white">Education</font>
 				</u></center>
 		</h3>
 		<br>
@@ -96,24 +100,35 @@
 				<img class="card-img-top" src="Images/UBC.png" alt="UBC">
 				<div class="card-body">
 					<h5 class="card-title">University of British Columbia</h5>
-					<h6 class="card-subtitle mb-2 text-muted">Bachelor of Science - Computer Science</h6>
+					<h6 class="card-subtitle mb-2 text-muted">Bachelor of Science - Computer Science and Software Engineering Option</h6>
 					<h7>
 						<font color="black"><strong>Relevant Coursework</strong></font>
 					</h7>
-					<ul>
-						<font color="black">
-							<li>CPSC 320 - Intermediate Algorithm Design and Analysis</li>
-						</font>
-						<font color="black">
-							<li>CPSC 313 - Computer Hardware and Operating Systems</li>
-						</font>
-						<font color="black">
-							<li>CPSC 322 - Introduction to Artificial Intelligence</li>
-						</font>
-						<font color="black">
-							<li>CPSC 304 - Introduction to Relational Databases</li>
-						</font>
-					</ul>
+					<div>
+						<ul>
+							<font color="black">
+								<li>CPSC 304 - Introduction to Relational Databases</li>
+							</font>
+							<font color="black">
+								<li>CPSC 310 - Introduction to Software Engineering</li>
+							</font>
+							<font color="black">
+								<li>CPSC 311 - Definition of Programming Languages</li>
+							</font>
+							<font color="black">
+								<li>CPSC 313 - Computer Hardware and Operating Systems</li>
+							</font>
+							<font color="black">
+								<li>CPSC 317 - Internet Computing</li>
+							</font>
+							<font color="black">
+								<li>CPSC 320 - Intermediate Algorithm Design and Analysis</li>
+							</font>
+							<font color="black">
+								<li>CPSC 322 - Introduction to Artificial Intelligence</li>
+							</font>							
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-3"> </div>
@@ -124,22 +139,36 @@
 	<div class="work-background containerPadder">
 		<h1 class="display-3">
 			<center><u>
-					<font color="white">Work Experience</font>
+					<font style="font-family: 'Noto Sans JP', sans-serif;" color="white">Work Experience</font>
 				</u></center>
 		</h1>
 		<br>
 		<div class="row">
-			<div class="col-sm-4 container-carder">
+			<div class="col-sm-3 container-carder">
+				<div class="card">
+					<img class="card-img-top" src="Images/NetApp.jpg" alt="UBC">
+					<div class="card-body">
+						<h5 class="card-title">NetApp Corporation</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Software Developer Intern</h6>
+						<h7>January 2021 - Present</h7>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 container-carder">
 				<div class="card">
 					<img class="card-img-top" src="Images/ece.jpg" alt="ece">
 					<div class="card-body">
 						<h5 class="card-title">UBC Electrical and Computer Engineering Department</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Undergraduate Academic Assistant</h6>
+						<h7>September 2020 - December 2020</h7>
+						<br>
+						<br>
 						<h6 class="card-subtitle mb-2 text-muted">Software Developer Intern in Research</h6>
-						<h7>May 2020 - Present</h7>
+						<h7>May 2020 - August 2020</h7>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4 container-carder">
+			<div class="col-sm-3 container-carder">
 				<div class="card">
 					<img class="card-img-top" src="Images/intel.png" alt="UBC">
 					<div class="card-body">
@@ -150,13 +179,13 @@
 				</div>
 			</div>
 
-			<div class="col-sm-4 container-carder">
+			<div class="col-sm-3 container-carder">
 				<div class="card">
 					<img class="card-img-top" src="Images/cs.png" alt="cs">
 					<div class="card-body">
 						<h5 class="card-title">UBC Computer Science Department</h5>
 						<h6 class="card-subtitle mb-2 text-muted">Undergraduate Teaching Assistant</h6>
-						<h7>July 2019- August 2019</h7>
+						<h7>July 2019 - August 2019</h7>
 						<br>
 						<h7>January 2019 - April 2019</h7>
 					</div>
@@ -169,7 +198,7 @@
 	<div class="project-background containerPadder">
 		<h1 class="display-3">
 			<center><u>
-					<font color="white">Personal Projects</font>
+					<font style="font-family: 'Noto Sans JP', sans-serif;" color="white">Personal Projects</font>
 				</u></center>
 		</h1>
 		<div class="row">
@@ -211,7 +240,7 @@
 								<i style="font-size: 3rem" class="devicon-c-plain colored"></i>
 								&nbsp;
 								<img height="52" width="70" src="Images/Arduino.png" style="vertical-align:top"
-									alt="nedblogo">
+									alt="arduinologo">
 							</li>
 						</center>
 					</ul>
@@ -250,9 +279,9 @@
 								<i style="font-size: 4rem" class="devicon-nodejs-plain-wordmark colored"></i>
 								&nbsp;
 								<img height="70" width="110" src="Images/Tensorflow.png" style="vertical-align:top"
-									alt="nedblogo">
+									alt="tensorflowlogo">
 								&nbsp;
-								<img height="50" width="90" src="Images/NeDB.png" style="vertical-align:top"
+								<img height="50" width="90" src="Images/nedb.png" style="vertical-align:top"
 									alt="nedblogo">
 
 							</li>
@@ -307,7 +336,7 @@
 								<i style="font-size: 3rem" class="devicon-c-plain colored"></i>
 								&nbsp;
 								<img height="52" width="70" src="Images/Arduino.png" style="vertical-align:top"
-									alt="nedblogo">
+									alt="arduinologo">
 							</li>
 						</center>
 					</ul>
@@ -341,7 +370,8 @@
 					<ul class="list-group list-group-flush">
 						<center>
 							<li class="list-group-item">
-								<i style="font-size: 3rem" class="devicon-java-plain-wordmark colored"></i>
+								<img height="50" width="30" src="Images/javaL.png" style="vertical-align:top"
+									alt="javalogo">
 								&nbsp;
 								<i style="font-size: 3rem" class="devicon-android-plain colored"></i>
 							</li>
@@ -374,7 +404,8 @@
 					<ul class="list-group list-group-flush">
 						<center>
 							<li class="list-group-item">
-								<i style="font-size: 3rem" class="devicon-java-plain-wordmark colored"></i>
+								<img height="50" width="30" src="Images/javaL.png" style="vertical-align:top"
+									alt="javalogo">
 								&nbsp;
 								<i style="font-size: 3rem" class="devicon-android-plain colored"></i>
 							</li>
@@ -408,7 +439,8 @@
 					<ul class="list-group list-group-flush">
 						<center>
 							<li class="list-group-item">
-								<i style="font-size: 3rem" class="devicon-java-plain-wordmark colored"></i>
+								<img height="50" width="30" src="Images/javaL.png" style="vertical-align:top"
+									alt="javalogo">
 								&nbsp;
 								<i style="font-size: 3rem" class="devicon-android-plain colored"></i>
 							</li>
@@ -432,14 +464,14 @@
 	<div class="skills-background containerPadder">
 		<h1 class="display-3">
 			<center><u>
-					<font color="white">Technical Skills</font>
+					<font style="font-family: 'Noto Sans JP', sans-serif;" color="white">Technical Skills</font>
 				</u></center>
 		</h1>
 		<center>
 			<br>
 			<div class="btn-padding">
-				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
-						class="devicon-java-plain-wordmark colored"></i></button>
+				<button type="button" class="btn btn-light"><img height="50" width="30" src="Images/javaL.png" 
+					style="vertical-align:top" alt="javalogo"></button>
 			</div>
 			<div class="btn-padding">
 				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
@@ -452,6 +484,10 @@
 			<div class="btn-padding">
 				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
 						class="devicon-javascript-plain colored"></i> <br>JavaScript</button>
+			</div>
+			<div class="btn-padding">
+				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
+					class="devicon-typescript-plain colored"></i><br>TypeScript</button>
 			</div>
 			<div class="btn-padding">
 				<button type="button" class="btn btn-light"><i style="font-size: 3rem"
@@ -501,7 +537,7 @@
 	<footer class="contact-background container-contact text-center">
 		<h1 class="display-4">
 			<center><u>
-					<font color="white">Contact</font>
+					<font style="font-family: 'Noto Sans JP', sans-serif;" color="white">Contact</font>
 				</u></center>
 		</h1>
 		<a href="https://github.com/Lirukshman88" style="color: #ffffff; text-decoration: none;" target="_blank">
@@ -515,5 +551,4 @@
 		</a>
 	</footer>
 </body>
-
 </html>
